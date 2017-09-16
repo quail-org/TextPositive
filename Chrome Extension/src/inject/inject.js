@@ -62,8 +62,14 @@ function getMask(cloning) {
 }
 
 
-
 function updateMask() {
 	if(!NODES.mask)
 		return;
+
+	NODES.mask.innerHTML = tokenize(NODES.cloning.value);
+}
+
+function tokenize(text) {
+	// need to replace current whitespace
+	return text.split(/\s+/g).map( (x, i) => '<txtpos id="txtpos-' + i + '">' + x + '</txtpos>').join(' ');
 }
