@@ -61,14 +61,9 @@ function getMask(cloning) {
 	console.log('mask done');
 }
 
+
+
 function updateMask() {
 	if(!NODES.mask)
 		return;
-
-/*
-	NODES.mask.style.top = NODES.cloning.offsetTop;
-	NODES.mask.style.bottom = NODES.cloning.offsetBottom;
-
-	NODES.mask.innerText = NODES.cloning.value;
-	*/
 }
