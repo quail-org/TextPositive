@@ -72,7 +72,6 @@ function tokenize(text) {
 	// need to replace current whitespace
 	let spaces = text.split(/[^\s]+/g);
 
-	console.log(spaces.map(x => "|" + x + "|"))
 	let interleave = (a, b) => {
 		let ret = [];	
 		for(var i = 0; i < a.length + b.length; i++) {
@@ -84,7 +83,7 @@ function tokenize(text) {
 		return ret;
 	}
 
-	let tags = 	text.split(/\s+/g).map( (x, i) => '<txtpos id="txtpos-' + i + '">' + x + '</txtpos>'));;
+	let tags = 	text.split(/\s+/g).map( (x, i) => '<txtpos id="txtpos-' + i + '">' + x + '</txtpos>');
 
 	return interleave(spaces, tags).join('');
 }
