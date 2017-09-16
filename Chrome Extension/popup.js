@@ -4,18 +4,21 @@ title.innerHTML = "Reading Settings...";
 
 var enabled = false;
 
-chrome.storage.sync.get('enable', function(res){
-    console.log('enable= ' + res.enable);
-    if (res.enable){
-		enabled = true;
+function updateCSS(){
+    if (enabled){
         title.innerHTML = "Text Positive is on";
         popup.style.backgroundColor = 'green';
         //TODO: set switch style
     }else{
-		enabled = false;
         title.innerHTML = "Text Positive is off";
         popup.style.backgroundColor = 'red';
     }
+}
+
+chrome.storage.sync.get('enabled', function(res){
+    enabled = res.enabled;
+    console.log('enable= ' + enabled);
+    updateCSS();
 });
 
 // switch communcates with storage
@@ -30,5 +33,5 @@ toggle.onclick = function(){
 	}, function(){
 		console.log('popup update');
 	});
-	return false;
+	//return false;
 };

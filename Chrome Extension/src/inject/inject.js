@@ -12,11 +12,16 @@ chrome.extension.sendMessage({}, function(response) {
 
             var enabled = true;
 
+            chrome.storage.sync.set({
+                enabled: enabled
+            }, function(){
+                console.log("initally set enabled to " + enabled);
+            });
+
             chrome.storage.onChanged.addListener(function(changes, namespace) {
-				console.log('a');
                 for (key in changes) {
                     let storageChange = changes[key];
-                    if (key === "enabled") {
+                    if (key === "enable") {
                         enabled = storageChange.newValue;
                         console.log('Updated enable=' + enabled);
                     }
