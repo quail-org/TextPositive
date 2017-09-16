@@ -65,6 +65,7 @@ function updateMask() {
 		return;
 
 	NODES.mask.innerHTML = tokenize(NODES.cloning.value);
+	scanTokens();
 }
 
 function tokenize(text) {
@@ -74,4 +75,11 @@ function tokenize(text) {
 
 function scanTokens() {
 	let cs = NODES.mask.childNodes;
+
+	cs.forEach( (x, i) => {
+		if(x.innerHTML == 'sucks')
+			x.className = 'active';
+		else
+			x.className = ''; // unnecessary?
+	});
 }
