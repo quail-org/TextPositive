@@ -61,17 +61,16 @@ function getMask(cloning) {
 	mask.setAttribute('id', MASK);	
 	mask.style.cssText = document.defaultView.getComputedStyle(cloning, '').cssText;
 	mask.style.position = 'absolute';
+
 	mask.style.background = 'rgba(0, 0, 255, 0.25)';
+
+
 	let col = 'rgba(255, 0, 0, 0.25)';
 	mask.style.setProperty('-webkit-text-fill-color', col);
 	mask.style.setProperty('color', col); 
 	mask.style.overflow = 'scroll';
 	mask.style.setProperty('pointer-events', 'none', 'important');
 	mask.style.setProperty('overflow-x', 'hidden', 'important');
-
-
-	// remove
-	mask.style.setProperty('text-decoration', 'underline', 'important');
 	cloning.parentNode.insertBefore(mask, cloning);
 	console.log('mask done');
 }
@@ -110,7 +109,7 @@ function scanTokens() {
 
 	cs.forEach( (x, i) => {
 		if(x.innerHTML == 'sucks')
-			x.className = 'active';
+			x.className = 'negative';
 		else
 			x.className = ''; // unnecessary?
 	});
