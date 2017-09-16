@@ -3,7 +3,7 @@ var title = document.getElementById("title");
 title.innerHTML = "Reading Settings...";
 
 chrome.storage.sync.get('enable', function(res){
-    console.log('enable= ' + res);
+    console.log('enable= ' + res.enable);
     if (res.enable){
         title.innerHTML = "Text Positive is on";
         popup.style.backgroundColor = 'green';
@@ -17,7 +17,7 @@ chrome.storage.sync.get('enable', function(res){
 
 // switch communcates with storage
 var toggle = document.getElementById("toggle");
-/*
+
 toggle.addEventListener("click", function(){
     //TODO:on condition ? "enable" : "disable";
     console.log('toggle click');
@@ -27,4 +27,3 @@ toggle.addEventListener("click", function(){
         console.log('popup update');
     });
 });
-*/

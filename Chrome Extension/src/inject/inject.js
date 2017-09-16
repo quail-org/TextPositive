@@ -10,7 +10,7 @@ chrome.extension.sendMessage({}, function(response) {
             // ----------------------------------------------------------
 			inject();
 
-            var enable = false;
+            var enable = true;
 
             chrome.storage.sync.set({
                 enable: enable
@@ -22,8 +22,8 @@ chrome.extension.sendMessage({}, function(response) {
                 for (key in changes) {
                     let storageChange = changes[key];
                     if (key === "enable"){
-                        console.log('Updated enable' + enable);
                         enable = storageChange.newValue;
+                        console.log('Updated enable=' + enable);
                     }
                 }
             });
