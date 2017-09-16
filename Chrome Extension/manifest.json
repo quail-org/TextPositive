@@ -20,7 +20,10 @@
       ],
       "js": [
         "src/inject/inject.js"
-      ]
+      ],
+	  "css": [
+	  	"style.css"
+	  ]
     }
   ]
 }

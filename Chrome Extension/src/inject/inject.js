@@ -1,3 +1,4 @@
+
 chrome.extension.sendMessage({}, function(response) {
 	var readyStateCheckInterval = setInterval(function() {
 	if (document.readyState === "complete") {
@@ -15,10 +16,7 @@ chrome.extension.sendMessage({}, function(response) {
 
 setInterval(function() {
 	updateMask();
-
 	let act = document.activeElement;
-	console.log(typeof act);
-
 	if(act && act.tagName.toLowerCase() == 'textarea') {
 		if(act != NODES.cloning) {
 			console.log('new element focus');
@@ -72,4 +70,8 @@ function updateMask() {
 function tokenize(text) {
 	// need to replace current whitespace
 	return text.split(/\s+/g).map( (x, i) => '<txtpos id="txtpos-' + i + '">' + x + '</txtpos>').join(' ');
+}
+
+function scanTokens() {
+	let cs = NODES.mask.childNodes;
 }
