@@ -70,8 +70,9 @@ function updateMask() {
 
 function tokenize(text) {
 	// need to replace current whitespace
-	let spaces = text.split(/[^\s+]/g);
+	let spaces = text.split(/[^\s]+/g);
 
+	console.log(spaces.map(x => "|" + x + "|"))
 	let interleave = (a, b) => {
 		let ret = [];	
 		for(var i = 0; i < a.length + b.length; i++) {
@@ -83,9 +84,9 @@ function tokenize(text) {
 		return ret;
 	}
 
-	window.interleave = interleave;
+	let tags = 	text.split(/\s+/g).map( (x, i) => '<txtpos id="txtpos-' + i + '">' + x + '</txtpos>'));;
 
-	return interleave(spaces, text.split(/\s+/g).map( (x, i) => '<txtpos id="txtpos-' + i + '">' + x + '</txtpos>'));
+	return interleave(spaces, tags).join('');
 }
 
 function scanTokens() {
