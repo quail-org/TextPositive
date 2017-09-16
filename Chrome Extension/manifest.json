@@ -17,6 +17,9 @@
       "<all_urls>",
       "storage"
   ],
+  "web_accessible_resources": [
+	"icons/*"
+  ],
   "content_scripts": [
     {
       "matches": [
