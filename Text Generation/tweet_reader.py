@@ -26,14 +26,18 @@ import Queue
 import re
 import string
 import threading
+import csv
 
 filenames = ['pos_train.csv', 'neg_train.csv', 'pos_test.csv', 'neg_test.csv']
 
 def load_file(filename):
-    '''
-    TODO: Complete this
-    '''
-    return list_of_tweets
+    with open(filename, 'rb') as csvfile:
+        reader = csv.reader(csvfile, quotechar='"', delimiter=',', quoting=csv.QUOTE_ALL,
+        skipinitialspace=True)
+        tweets = []
+        for row in reader:
+            tweets.append(row);
+        return tweets[0]
 
 def build_dict(cutoff):
     """
