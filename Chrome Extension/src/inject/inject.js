@@ -62,8 +62,10 @@ function getMask(cloning) {
 	mask.style.cssText = document.defaultView.getComputedStyle(cloning, '').cssText;
 	mask.style.position = 'absolute';
 
-	mask.style.background = 'rgba(0, 0, 255, 0.25)';
-
+	mask.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+	mask.style.backgroundImage = "url('" + chrome.extension.getURL('/icons/icon48.png') + "')";
+	mask.style.backgroundPosition = 'bottom right';
+	mask.style.backgroundRepeat = 'no-repeat';
 
 	let col = 'rgba(255, 0, 0, 0.25)';
 	mask.style.setProperty('-webkit-text-fill-color', col);
