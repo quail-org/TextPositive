@@ -25,9 +25,13 @@ setInterval(function() {
 	}
 }, 100);
 
+var STATUS;
 
 function inject() {
 	console.log('ok');
+	STATUS = document.createElement('div');
+	STATUS.setAttribute('id', 'popup');
+	document.body.appendChild(STATUS);
 }
 
 var MASK_DIV;
@@ -98,3 +102,24 @@ function scanTokens() {
 			x.className = ''; // unnecessary?
 	});
 }
+
+
+document.onmousemove = function(e) {
+	var found = false;
+	Array.from(document.getElementsByTagName('txtpos')).forEach(elem => {
+		var r = elem.getBoundingClientRect();
+
+		if(e.pageX >= r.left && e.pageX <= r.right
+			&& e.pageY >= r.top && e.pageY <= r.bottom) {
+			STATUS.style.visibility = "visible";
+			STATUS.style.top = r.bottom + 'px';
+			STATUS.style.left = r.left + 'px';
+			found = true;
+		}
+	});
+
+	if(!found)
+		STATUS.style.visibility = 'hidden';
+}
+
+
