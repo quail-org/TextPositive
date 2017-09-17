@@ -27,6 +27,8 @@ chrome.extension.sendMessage({}, function(response) {
                     }
                 }
             });
+
+			bind();
         }
     }, 10);
 });
@@ -50,6 +52,10 @@ function inject() {
 	STATUS = document.createElement('div');
 	STATUS.setAttribute('id', 'popup');
 	document.body.appendChild(STATUS);
+}
+
+function updateStatus(thing) {
+	STATUS.innerHTML = "";
 }
 
 var MASK_DIV;
@@ -124,22 +130,27 @@ function scanTokens() {
 }
 
 
-document.onmousemove = function(e) {
-	var found = false;
-	Array.from(document.getElementsByTagName('txtpos')).forEach(elem => {
-		var r = elem.getBoundingClientRect();
+function bind() {
+	document.onmousemove = function(e) {
+		var found = false;
+		Array.from(document.getElementsByTagName('txtpos')).forEach(elem => {
+			var r = elem.getBoundingClientRect();
+			var br = document.body.getBoundingClientRect();
 
-		if(e.pageX >= r.left && e.pageX <= r.right
-			&& e.pageY >= r.top && e.pageY <= r.bottom) {
-			STATUS.style.visibility = "visible";
-			STATUS.style.top = r.bottom + 'px';
-			STATUS.style.left = r.left + 'px';
-			found = true;
-		}
-	});
+			var ry = r.top + window.scrollY;
+			var ry2 = r.bottom + window.scrollY;
 
-	if(!found)
-		STATUS.style.visibility = 'hidden';
+			if(e.pageX >= r.left && e.pageX <= r.right
+				&& e.pageY >= ry && e.pageY <= ry2) {
+				console.log('what');
+				STATUS.style.visibility = "visible";
+				STATUS.style.top = (ry2 + 3) + 'px';
+				STATUS.style.left = r.left + 'px';
+				found = true;
+			}
+		});
+
+		if(!found)
+			STATUS.style.visibility = 'hidden';
+	}
 }
-
-
