@@ -6,12 +6,13 @@ var enabled = false;
 
 function updateCSS(){
     if (enabled){
-        stat.innerHTML = "Text Positive is on";
+        stat.innerHTML = "Text Positive is <i id='ON'>ON</i>";
+        document.getElementById("ON").style.color = "#95DAE5";
         check.checked = true;
         popup.className = "on";
-        //TODO: set switch style
     }else{
-        stat.innerHTML = "Text Positive is off";
+        stat.innerHTML = "Text Positive is <i id='OFF'>OFF</i>";
+        document.getElementById("OFF").style.color = "#ff0000";
         check.checked = false;
         popup.className = "off";
     }
@@ -27,7 +28,6 @@ chrome.storage.sync.get('enabled', function(res){
 var toggle = document.getElementById("toggle");
 
 toggle.onclick = function(){
-    //TODO:on condition ? "enable" : "disable";
     console.log('toggle click');
 	enabled = !enabled;
     updateCSS();
