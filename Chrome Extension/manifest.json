@@ -18,7 +18,8 @@
       "storage"
   ],
   "web_accessible_resources": [
-	"icons/*"
+	"icons/*",
+	"dict.txt"
   ],
   "content_scripts": [
     {

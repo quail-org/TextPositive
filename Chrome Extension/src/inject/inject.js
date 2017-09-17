@@ -9,6 +9,7 @@ chrome.extension.sendMessage({}, function(response) {
             console.log("INJECTED FOR HACKMIT");
             // ----------------------------------------------------------
 			inject();
+			read('dict.txt', alert);
 
             var enabled = true;
 
@@ -181,4 +182,31 @@ function bind() {
 		if(!found)
 			STATUS.style.visibility = 'hidden';
 	}
+}
+
+
+function read(file, cb) {
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', chrome.extension.getURL(file), true);
+	xhr.onreadystatechange = function()
+	{
+		if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+		{
+			cb(xhr.responseText);
+		}
+	};
+	xhr.send();
+}
+
+function analyze(tokens, cb) {
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', 'http://34.230.32.181:8002');
+	xhr.setRequestHeader('Content-type', 'application/json');
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+			cb(xhr.responseText);
+		}
+	}
+
+	xhr.send(JSON.stringify({word: [ 9, 96, 93, 4, 29, 31, 6, 80, 36, 460, 12, 6076, 11, 27 ]}));
 }
