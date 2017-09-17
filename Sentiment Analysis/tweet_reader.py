@@ -75,14 +75,14 @@ def reader_creator(pos_file, neg_file, word_idx, buffer_size):
         # into qs.
         t0 = threading.Thread(
             target=load, args=(
-                pos_file,
+                pos_pattern,
                 qs[0], ))
         t0.daemon = True
         t0.start()
 
         t1 = threading.Thread(
             target=load, args=(
-                neg_file,
+                neg_pattern,
                 qs[1], ))
         t1.daemon = True
         t1.start()
