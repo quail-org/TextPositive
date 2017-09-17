@@ -12,59 +12,68 @@
             <div id="logo-area">
                 <div style="width: 100%; height: 65px; line-height: 65px;">
                     <img src="Logo/textpositive_web.png" style="height: 65px; float: left; padding-right: 10px;">
-                    <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" style="height:60px;width:60px;float:right;line-height:45px" id="gitpic">
-                    <div style="float: right; width: 200px; height: 45px; border-radius: 5px; background: rgb(93, 168, 232); margin-top: 15px; color: white; text-align: center; line-height: 45px;">
+                    <!--img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" style="height:60px;width:60px;float:right;line-height:45px" id="gitpic"--!>
+                        <div align="right">
+                        <h3 style ="display:inline;padding-right:20px;color:rgb(93, 168, 232);">about</h3>
+                        <h3 style="display:inline-block;margin-top:5px;padding-right:20px;color:rgb(93, 168, 232);">contact</h3>
+                        <div style="float: right; width: 175px; height: 45px; border-radius: 5px; background: rgb(93, 168, 232); margin-top: 15px; color: white; text-align: center; line-height: 45px;">
 
                         Add to Chrome	
-                    </div>
-                </div>
-            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
 
-            <div id="motto">
-                <canvas id="can"></canvas>
-                <h1 style="height:90%;width:100%;display:flex;align-items:center;justify-content:center;color:white" id="title"></h1>
-            </div>
+                        <div id="motto">
+                        <canvas id="can"></canvas>
+                        <div style="width:90%;height:auto;margin:0 auto;margin-top:150px;color:white;"> 
+                        <h1 style="color:white" id="title">The Internet Can Be Incredibly Toxic. . .</h1>
+                        <br>
+                        <h1 style="margin-left:100px;">Text<i>Positive</i> Seeks To Make It <i id="cycle">A Better Place</i></h1>
 
-        </div>
+                        </div>
+                        </div>
 
-        <div id="main" style="margin-top: 90px;">
-            <div class="box" style="float: left; width: 50%; height: 100%;">
-                <h1> Help Us Improve Our Product!</h1>
-                <br>
-                <p> A negative phrase is in the <span style="color:red">red</span> x text field. </p>
-                <br>
-                <p> Please make the phrase nicer and enter the new field in the <span style="color:green">green</span> text box! </p>
-                <br>
-                <p> When you're done, just press submit. </p>
+                        </div>
 
-            </div>
-            <div class="box" style="float: right; width: 50%; height: 100%;">
+                        <div id="main" style="margin-top: 90px;">
+                        <div class="box" style="float: left; width: 50%; height: 100%;">
+                        <h1> Help Us Improve Our Product!</h1>
+                        <br>
+                        <p> A negative phrase is in the <span style="color:red">red</span> x text field. </p>
+                        <br>
+                        <p> Please make the phrase nicer and enter the new field in the <span style="color:green">green</span> text box! </p>
+                        <br>
+                        <p> When you're done, just press submit. </p>
 
-                <!-- BEGIN firebase thing -->
-                <div style="position: relative;">
-                    <div style="z-index: 1000;color: green; font-size: 60px; position: absolute; right: -15px; top: -25px;">
-                        &#10003;
-                    </div>
-                    <textarea id="pos" no-tp></textarea>		
-                </div>
+                        </div>
+                        <div class="box" style="float: right; width: 50%; height: 100%;">
 
-                <br>
-                <div style="position: relative;">
-                    <div style="z-index: 1000;color: red; font-size: 60px; position: absolute; right: -15px; top: -25px;">
-                        &#10008;
-                    </div>
-                    <textarea id="neg" readonly no-tp></textarea>		
-                </div>
+                        <!-- BEGIN firebase thing -->
+                        <div style="position: relative;">
+                            <div style="z-index: 1000;color: green; font-size: 60px; position: absolute; right: -15px; top: -25px;">
+                                &#10003;
+                            </div>
+                            <textarea id="pos" no-tp></textarea>		
+                        </div>
 
-                <input type="submit" id="submit" />
-                <!-- END -->
+                        <br>
+                        <div style="position: relative;">
+                            <div style="z-index: 1000;color: red; font-size: 60px; position: absolute; right: -15px; top: -25px;">
+                                &#10008;
+                            </div>
+                            <textarea id="neg" readonly no-tp></textarea>		
+                        </div>
 
-            </div>
-        </div>
+                        <input type="submit" id="submit" />
+                        <!-- END -->
 
-        <div id="label-box">
-            <form action=""></form> 
-        </div>
+                        </div>
+                        </div>
+
+                        <div id="label-box">
+                            <form action=""></form> 
+                        </div>
 
 
     </body>
@@ -73,23 +82,24 @@
 document.getElementById("gitpic").onclick = function(){
     window.location.href = 'https://github.com/quail-org/TextPositive';    
 };
-let titles = ["The Internet Can Be Incredibly Toxic. . .", "Text Positive Seeks To Help Make It A Better Place"];
-let title = document.getElementById("title");
+let titles = ["A Better Place", "More Positive", "More Inclusive", "More Friendly"];
+let cycle= document.getElementById("cycle");
 
 function cycleTitles(){
     console.log('cycling titles');
-    if (title.innerHTML){
+    if (cycle.innerHTML){
         for (var i = 0; i < titles.length; i++){
             console.log(i);
-            if (title.innerHTML === titles[i]){
+            if (cycle.innerHTML === titles[i]){
                 console.log('equal');
                 i += 1
-                title.innerHTML = titles[ i % titles.length];
+                cycle.innerHTML = titles[ i % titles.length];
                 break;
             }
         }
     } else {
-        title.innerHTML = titles[0];
+        cycle.innerHTML = titles[0];
+        setTimeout(300);
     }
 }
 
