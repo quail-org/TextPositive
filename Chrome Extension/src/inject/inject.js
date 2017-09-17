@@ -67,9 +67,17 @@ function getMask(cloning) {
 	mask.style.cssText = document.defaultView.getComputedStyle(cloning, '').cssText;
 	mask.style.position = 'absolute';
 
+    let height = cloning.clientHeight;
+    console.log('height:' + height);
+    if (height < 28){
+        let bgs = "" + height + "px " + height + "px";
+        mask.style.backgroundSize = bgs; 
+    } else{
+        mask.style.backgroundSize = "28px 28px";
+    }
+
 	mask.style.backgroundColor = 'rgba(0, 0, 0, 0)';
 	mask.style.backgroundImage = "url('" + chrome.extension.getURL('/icons/textpositive_logo.png') + "')";
-    mask.style.backgroundSize = "28px 28px";
 	mask.style.backgroundPosition = 'bottom right';
 	mask.style.backgroundRepeat = 'no-repeat';
 
