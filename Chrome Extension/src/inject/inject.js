@@ -68,7 +68,8 @@ function getMask(cloning) {
 	mask.style.position = 'absolute';
 
 	mask.style.backgroundColor = 'rgba(0, 0, 0, 0)';
-	mask.style.backgroundImage = "url('" + chrome.extension.getURL('/icons/icon48.png') + "')";
+	mask.style.backgroundImage = "url('" + chrome.extension.getURL('/icons/textpositive_logo.png') + "')";
+    mask.style.backgroundSize = "28px 28px";
 	mask.style.backgroundPosition = 'bottom right';
 	mask.style.backgroundRepeat = 'no-repeat';
 
