@@ -25,11 +25,32 @@
 
 </div>
 
-<div id="main">
-	<div style="background: green; float: left; width: 50%; height: 100%;">
-
+<div id="main" style="margin-top: 100px;">
+	<div class="box" style="float: left; width: 50%; height: 100%;">
+		<h1> Testing </h1>
+		<br>
+		<p> What do I do here? </p>
 	</div>
-	<div style="background: red; float: right; width: 50%; height: 100%;">
+	<div class="box" style="float: right; width: 50%; height: 100%;">
+
+		<!-- BEGIN firebase thing -->
+		<div style="position: relative;">
+		    <div style="z-index: 1000;color: green; font-size: 60px; position: absolute; right: -15px; top: -25px;">
+				&#10003;
+			</div>
+		<textarea id="pos" no-tp></textarea>		
+		</div>
+
+		<br>
+		<div style="position: relative;">
+		    <div style="z-index: 1000;color: red; font-size: 60px; position: absolute; right: -15px; top: -25px;">
+				&#10008;
+			</div>
+		<textarea id="neg" no-tp></textarea>		
+		</div>
+
+		<input type="submit" />
+		<!-- END -->
 
 	</div>
 </div>
