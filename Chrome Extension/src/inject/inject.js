@@ -37,12 +37,14 @@ chrome.extension.sendMessage({}, function(response) {
 				if(sugg.innerHTML.indexOf('<i>') >= 0) {
 					NODES.cloning.value = NODES.cloning.value.replace(CUR_STAT.innerHTML.trim(), '');
 					CUR_STAT.remove();
+					scan();
 					return;
 				}
 
 				NODES.cloning.value = NODES.cloning.value.replace(CUR_STAT.innerHTML.trim(), sugg.innerHTML.split('&gt;')[0].trim());
 				STATUS.style.visibility = 'hidden';
 				CUR_STAT.innerHTML = sugg.innerHTML.split('&gt;')[0].trim();
+				scan();
 
 
 			};
@@ -224,7 +226,7 @@ function bind() {
 			} catch(e) {
 				s = 0;
 			}
-			if(s > 0.45 && e.pageX >= r.left && e.pageX <= r.right
+			if(s > 0.5 && e.pageX >= r.left && e.pageX <= r.right
 				&& e.pageY >= ry && e.pageY <= ry2) {
 				STATUS.style.visibility = "visible";
 				STATUS.style.top = (ry2 + 0) + 'px';
@@ -263,7 +265,7 @@ function updateClasses() {
 		}
 		let elem = document.getElementById(id);
 
-		if(elem && res.data[0][0] > 0.45 && elem.className != 'negative') {
+		if(elem && res.data[0][0] > 0.5 && elem.className != 'negative') {
 			elem.className = 'negative';
 		}
 	});
