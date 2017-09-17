@@ -1,5 +1,6 @@
 
 var dict = {};
+var ants = {};
 
 chrome.extension.sendMessage({}, function(response) {
     var readyStateCheckInterval = setInterval(function() {
@@ -19,6 +20,32 @@ chrome.extension.sendMessage({}, function(response) {
 				});
 			});
 
+			read('ant4.txt', a => {
+				a.split('\n').forEach( (x, i) => {
+					var p = x.split(':');
+					var bad = p[0];
+					if(p.length < 2)
+						return;
+					var ps = p[1].split(',').filter(x=>x);
+					ants[bad] = ps[Math.floor(Math.random() * ps.length)];
+				});
+
+			});
+
+			let sugg = document.getElementById('suggest');
+			sugg.onclick = function(e) {
+				if(sugg.innerHTML.indexOf('<i>') >= 0) {
+					NODES.cloning.value = NODES.cloning.value.replace(CUR_STAT.innerHTML.trim(), '');
+					CUR_STAT.remove();
+					return;
+				}
+
+				NODES.cloning.value = NODES.cloning.value.replace(CUR_STAT.innerHTML.trim(), sugg.innerHTML.split('&gt;')[0].trim());
+				STATUS.style.visibility = 'hidden';
+				CUR_STAT.innerHTML = sugg.innerHTML.split('&gt;')[0].trim();
+
+
+			};
 	
             var enabled = true;
 
@@ -53,7 +80,7 @@ setInterval(function() {
 			getMask(act);
 		}
 	}
-}, 100);
+}, 500);
 
 var STATUS;
 
@@ -170,11 +197,22 @@ function scanTokens() {
 	*/
 }
 
+var CUR_STAT;
 
 function bind() {
 	document.onmousemove = function(e) {
 		var found = false;
+			var p = STATUS.getBoundingClientRect();
+			var py = p.top + window.scrollY;
+			var py2 = p.bottom + window.scrollY;
+			var px = p.left;
+			var px2 = p.right;
+
+		var inside = e.pageX >= px && e.pageX <= px2
+					&& e.pageY >= py && e.pageY <= py2;
 		Array.from(document.getElementsByTagName('txtpos')).forEach(elem => {
+
+
 			var r = elem.getBoundingClientRect();
 			var br = document.body.getBoundingClientRect();
 
@@ -183,24 +221,33 @@ function bind() {
 
 			let s;
 			try {
-				s = CLASS[elem.getAttribute('id')].data[0][1];
+				s = CLASS[elem.getAttribute('id')].data[0][0];
 			} catch(e) {
 				s = 0;
 			}
-			if(s > 0.4 && e.pageX >= r.left && e.pageX <= r.right
+			if(s > 0.3 && e.pageX >= r.left && e.pageX <= r.right
 				&& e.pageY >= ry && e.pageY <= ry2) {
 				console.log('what');
 				STATUS.style.visibility = "visible";
-				STATUS.style.top = (ry2 + 3) + 'px';
+				STATUS.style.top = (ry2 + 0) + 'px';
 				STATUS.style.left = r.left + 'px';
+				var sugg = document.getElementById('suggest');
+				if(ants[elem.innerHTML]) {
+					sugg.innerHTML = ants[elem.innerHTML] + ' >>';
+				} else {
+					sugg.innerHTML = '<i>remove it</i> >>';
+				}
+				CUR_STAT = elem;
 				console.log(document.getElementById('redbar').style.width);
-				document.getElementById('redbar').style.width = Math.round(score * 120) + 'px';
+				document.getElementById('redbar').style.width = Math.round(s * 120) + 'px';
 				found = true;
 			}
 		});
 
-		if(!found)
+		if(!found && !inside) {
 			STATUS.style.visibility = 'hidden';
+			CUR_STAT = null;
+		}
 	}
 
 }
@@ -217,7 +264,7 @@ function updateClasses() {
 		}
 		let elem = document.getElementById(id);
 
-		if(elem && res.data[0][1] > 0.4 && elem.className != 'negative') {
+		if(elem && res.data[0][0] > 0.3 && elem.className != 'negative') {
 			elem.className = 'negative';
 		}
 	});
@@ -241,9 +288,13 @@ function scan() {
 
 	function parse(s) {
 		let words = s.map(x => x.innerText);		
-		words = words.map(strip).join(' ');
+		words = words.map(strip).join(' ').trim();
 					
+		console.log(words);
+
 		let tok = tokenizer(words);
+
+		console.log(tok);
 
 		let ids = s.map(x => x.getAttribute('id'));
 		

@@ -109,6 +109,7 @@ txtpos.negative {
 	line-height: 15px;
 	left: 0px;
 }
+
 #suggest {
 	background: rgb(149, 218, 229);
 	left: 50px;
@@ -123,4 +124,5 @@ txtpos.negative {
 	text-align: left;
 	color: white;
 	font-weight: bold;
+	cursor: pointer;
 }
