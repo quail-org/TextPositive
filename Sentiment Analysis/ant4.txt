@@ -1576,7 +1576,7 @@ hassles:calmness,calm,tranquility,happiness,aid
 haste:calm,delay,leisure,slowing,slowness
 hastily:slowly,delayed
 hasty:leisurely,careful,cautious,kind,wise
-hate:happiness,friendship,don't mind,like,compliment
+hate:happiness,friendship,good will,liking,compliment
 hateful:kind,pleasing,pleasant,attractive,desirous
 hatefully:decently,morally
 hatefulness:liking,admiration,fondness,reverence,like

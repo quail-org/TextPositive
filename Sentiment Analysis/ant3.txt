@@ -1,0 +1,481 @@
+abnormal:standard,usual,conforming,customary,common
+abolish:permit,create,validate,institute,sanction
+abominable:wonderful,kind,attractive,desirous,pleasant
+abominably:adequately,calmly,little,mildly,morally
+abominate:admire,cherish,like,love,approve
+abomination:delight,happiness,joy,treat,pleasure
+abort:begin,start,continue,keep,carry to term
+aborted:begin,start,continue,keep,carry to term
+aborts:begin,start,continue,keep,carry to term
+abrade:make happy,rebuild,please
+abrasive:kind,pleasing,pleasant,soothing,calm
+abrupt:kind,deliberate,gradual,leisurely,calm
+abscond:wait,remain,join,strengthen,stay
+absence:existence,abundance,enough,plenty,presence
+absent-minded:alert,aware,attentive
+absurd:sensible,logical,rational,wise,realistic
+absurdity:wisdom,logic,judgment,seriousness,intelligence
+absurdly:carefully,cautiously,wisely,sensibly,thoughtfully
+absurdness:wisdom,circumspection,thoughtfulness,sense,judgment
+abuse:good deed,obedience,goodness,aid,preservation
+abused:aid,assist,improve,protect,clean
+abuses:good deed,obedience,goodness,aid,preservation
+abusive:kind,respectful,nice,complimentary
+abysmal:infinite,low
+accidental:planned,deliberate,intentional,intended,premeditated
+accost:aid,ignore,slight,refrain,avoid
+accusation:commendation,praise,compliment,flattery,exculpation
+accusations:commendation,praise,compliment,flattery,exculpation
+accuse:exonerate,pardon,praise,applaud,exculpate
+accuses:exonerate,pardon,praise,applaud,exculpate
+accusing:exonerate,pardon,praise,applaud,exculpate
+acerbate:soothe,appease,calm,make happy,please
+acerbic:kind,calm,mild,nice
+ache:happiness,joy,health,relief,comfort
+ached:aid,assist,assuage,soothe,help
+aches:happiness,joy,health,relief,comfort
+aching:experienced,healthy
+acrid:delicious,savory,kind,sweet,complimentary
+acridness:kindness,sweetness
+acrimonious:pleasant,kind,kindly,peaceable,happy
+acrimony:good will,liking,benevolence,mildness,civility
+adamant:willing,irresolute,lenient,indefinite,movable
+adamantly:indefinitely,weakly,flexibly,movably,changeably
+addict:detractor
+addicted:indifferent,unwilling,disinclined,independent,opposed
+addicting:temporary,infrequent,intermittent,occasional,unusual
+addicts:detractor
+admonish:permit,compliment,praise,laud,applaud
+admonishment:praise
+admonition:praise
+adulterate:clean,honor,purify,thicken,cleanse
+adulterated:honorable,moral,virtuous,clean,pure
+adversary:ally,assistant,backer,helper,helpmate
+adverse:friendly,kind,advantageous,assisting,beneficial
+adversity:good luck,miracle,success,advantage,assistance
+afflict:aid,soothe,delight,assist,comfort
+affliction:health,happiness,joy,advantage,profit
+affront:flattery,praise,aid,happiness,appeasement
+afraid:brave,unafraid,composed,confident,courageous
+aggravate:aid,delight,calm,soothe,appease
+aggravating:aid,delight,calm,soothe,appease
+aggravation:health,happiness,aid,calmness,comfort
+aggressive:laid-back,complaisant,calm,easy-going
+aggrieve:help
+aggrieved:pleased,comforted,happy
+aghast:unsurprised
+agonies:contentment,happiness,joy,health,success
+agonize:aid,assist,assuage,comfort,soothe
+agonizing:pleasant,pleasing
+agonizingly:softly,moderately,gently,unenthusiastically,easily
+agony:contentment,happiness,joy,health,success
+aground:afloat
+ail:aid,soothe,assist,help,make happy
+ailing:healthy,fit,hearty,well,sound
+ailment:health
+aimless:methodical,specific,systematic,sensible,determined
+alarm:calm,calmness,collectedness,encouragement,happiness
+alarming:comforting
+alarmingly:lightly,carefully,on guard,safely,securely
+alienate:marry,unite,combine,join,be friendly
+alienated:united
+alienation:endearment,friendliness,agreement,connection,charm
+allegation:exculpation,denial
+allegations:exculpation,denial
+allege:take back,deny,withhold,contradict,dissent
+aloof:friendly,kind,compassionate,interested,sociable
+altercation:calm,quiet,accord,unity,peace
+ambiguity:clarity,clearness,lucidity,certainty,definiteness
+ambiguous:known,obvious,unquestionable,determined,unambiguous
+ambivalence:decisiveness,certainty,sureness
+ambivalent:determined,unquestionable,settled,undoubted,unequivocal
+ambush:frankness,honesty
+amiss:suitable,proper,good,right
+amputate:join
+anarchism:calm,quiet,calmness,orderliness,health
+anarchistic:obedient,lawful,legal,legitimate,licit
+anarchy:calm,lawfulness,harmony,order,peace
+anemic:healthy,flushed,hearty,strong
+anger:delight,happiness,joy,good will,glee
+angrily:mildly,calmly,softly,quietly,gently
+angry:cheerful,pleased,peaceful,collected,content
+anguish:happiness,health,joy,delight,relief
+animosity:rapport,friendship,good will,friendliness,happiness
+annihilate:create,construct,aid,assist,permit
+annihilation:building,construction
+annoy:appease,calm,comfort,quiet,reassure
+annoyance:happiness,satisfaction,calmness,joy,delight
+annoyances:happiness,satisfaction,calmness,joy,delight
+annoyed:gratified,pleased
+annoying:helpful,pleasant,pleasing,soothing,welcome
+annoys:appease,calm,comfort,quiet,reassure
+anomalous:standard,usual,conforming,normal,ordinary
+anomaly:sameness,regularity,usualness,conformity,normality
+antagonism:friendship,good will,liking,accord,rapport
+antagonist:ally,assistant,helper,associate,protagonist
+antagonistic:friendly,kind,nice,agreeable
+antagonize:calm,soothe,aid,make happy,please
+anti-social:friendly,sociable,fun-loving,participating
+antipathy:friendship,good will,friendliness,liking,admiration
+antiquated:modern,young,current,new,forward-looking
+anxieties:calm,calmness,collectedness,happiness,joy
+anxiety:calm,calmness,collectedness,happiness,joy
+anxious:brave,composed,confident,courageous,unafraid
+anxiously:incompletely,partially,inadequately,carelessly,incautiously
+anxiousness:calm,calmness,collectedness,happiness,comfort
+apathetic:interested,compassionate,responsive,caring,concerned
+apathy:sensitivity,interest,care,concern,feeling
+apocalypse:happiness,miracle,good fortune,wonder
+apologist:enemy,foe
+apologists:enemy,foe
+appal:comfort,reassure,encourage,satisfy
+appall:hearten,assist,calm,comfort,gladden
+appalled:comfort,reassure,encourage,satisfy
+appalling:pleasant,pleasing,wonderful,calming,beautiful
+appallingly:calmly,easily,trivially
+apprehension:calmness,calm,confidence,peace,belief
+apprehensions:calmness,calm,confidence,peace,belief
+apprehensive:collected,composed,laid-back,confident,unquestionable
+arbitrary:logical,sensible,reliable,dependable,unchanging
+arcane:commonplace,known,outward,common,normal
+archaic:current,modern,in vogue,up-to-date,young
+arduous:facile,trivial,helpful,effortless,pleasant
+argumentative:complaisant,friendly,compromising,agreeable
+arrogance:humility,modesty,shyness,meekness,servility
+arrogant:timid,unsure,meek,servile,humble
+ashamed:confident,glad,joyful,unrepentant,defiant
+asperse:compliment,praise,laud,flatter,approve
+aspersion:compliment,praise,commendation,adulation,flattery
+aspersions:compliment,praise,commendation,adulation,flattery
+assail:praise,compliment,uphold,exonerate,retreat
+assassin:victim
+assassinate:create,bear,give birth,keep
+assault:retreat
+astray:right,straight,on course
+asunder:together
+atrocious:magnificent,wonderful,inoffensive,good
+atrocities:pleasantry,pleasantness,good behavior,kindness
+atrocity:pleasantry,pleasantness,good behavior,kindness
+atrophy:betterment,improvement,increase,rise,ascent
+attack:aid,protection,resistance,shelter,shield
+attacks:aid,protection,resistance,shelter,shield
+audacious:careful,cautious,cowardly,meek,timid
+audaciously:fearfully,timidly
+audaciousness:cowardice,care,caution,timidity,carefulness
+audacity:cowardice,fear,gentility,humility,meekness
+austere:meek,elaborate,encouraging,extravagant,indulgent
+authoritarian:democratic,lenient,submissive,flexible,yielding
+autocratic:democratic
+avarice:generosity,philanthropy
+avenge:comfort,forgive,cheer,encourage
+averse:friendly,kind,willing,loving,agreeable
+aversion:rapport,liking,delight,affection,fondness
+awful:encouraging,pleasant,pleasing,wonderful,inoffensive
+awkward:adroit,artful,dexterous,elegant,graceful
+awkwardness:sophistication,artfulness,dexterity,elegance,skill
+ax:hire,employ
+babble:silence,quiet,wisdom,sense
+backbite:praise,cherish,compliment,honor,help
+backbiting:praise,encouragement
+backward:precocious,intelligent,ahead,forward,aggressive
+backwardness:boldness,confidence
+bad:fortunate,lucky,pleasing,wonderful,OK
+badly:adequately,calmly,little,mildly,morally
+baffle:enlighten,explain,explicate,comfort,soothe
+baffled:enlighten,explain,explicate,comfort,soothe
+bafflement:expectation
+baffling:comprehensible,fathomable,clear
+bait:repulsion,discouragement
+balk:OK,aid,accept,face,meet
+banal:intelligent,new,original,uncommon,sharp
+bane:building,good luck,prosperity,success,contentment
+banish:welcome,include,incorporate,permit,hold
+banishment:inclusion,welcoming
+bankrupt:solvent,wealthy,successful,restored,rich
+barbarian:civilized,cultured,educated,humane,kind
+barbaric:civilized,cultured,kind,refined,sophisticated
+barbarically:kindly,gently,humanely,nicely
+barbarity:kindness,niceness
+barbarous:inoffensive,polite,kind,compassionate,considerate
+barbarously:kindly,gently,humanely,nicely
+barren:fruitful,productive,damp,moist,wet
+baseless:warranted,based,called-for,reasonable,justified
+bashful:confident,unabashed,forward,aggressive,bold
+bashing:retreat
+bastard:real,legitimate,genuine,true
+bastards:real,legitimate,genuine,true
+battered:aid,heal,construct,create,assist
+battering:aid,heal,construct,create,assist
+batty:sane
+bearish:courteous,polite,dishonest,lengthy,long
+beastly:good,kind,nice,superior,inoffensive
+bedlam:calm,calmness,quiet,silence,harmony
+bedlamite:brainy,intelligent,understanding,bright,smart
+befoul:clean,purify,cleanse,praise
+beg:reply,answer,leave alone,give,not want
+beggarly:luxurious,wealthy,rich
+begging:undesirous
+beguile:refuse,turn off,disenchant,repulse,give
+belated:on time,punctual,timely,early
+beleaguer:aid,assist,soothe,make happy,please
+belie:aid,assist,concur,consent,affirm
+belittle:compliment,laud,praise,increase,enlarge
+belittled:compliment,laud,praise,increase,enlarge
+belittling:compliment,laud,praise,increase,enlarge
+bellicose:easygoing,pacific,pacifistic,passive,peaceful
+belligerent:peaceful,friendly,kind,agreeable,calm
+bemoan:praise,gloat,be happy
+bemoaning:praise,gloat,be happy
+bemused:existing,bored,disinterested,uninterested,unoccupied
+bent:uncaring,undecided,straight
+berate:compliment,laud,praise,flatter,hail
+bereave:clothe,hold,keep,cover
+bereavement:happiness,health,comfort
+bereft:full,happy
+beseech:refuse,reply,answer,command,give
+beset:explain,surrender,exclude,aid,unloose
+besiege:let go,leave alone
+besmirch:honor,praise,upgrade,clean
+bestial:humane,kind,generous,gentle,nice
+betray:aid,assist,protect,hide,stay
+betrayal:devotion,faithfulness,honesty,loyalty,frankness
+betrayals:devotion,faithfulness,honesty,loyalty,frankness
+betraying:aid,assist,protect,hide,stay
+betrays:aid,assist,protect,hide,stay
+bewail:exalt,gloat,praise,vaunt,be happy
+beware:disregard,ignore,court,invite,risk
+bewilder:enlighten,explain,explicate,soothe,calm
+bewildered:aware,understanding,clear,oriented
+bewildering:enlighten,explain,explicate,soothe,calm
+bewilderment:expectation
+bewitch:tire,disgust,offend,reject,bore
+bias:fairness,dislike,hate,disinclination,antipathy
+biased:impartial,unbiased,fair
+biases:fairness,dislike,hate,disinclination,antipathy
+bicker:concur,concede,discuss,agree,make peace
+bickering:concur,concede,discuss,agree,make peace
+bigotries:fairness,impartiality,open-mindedness,broad-mindedness,tolerance
+bigotry:fairness,impartiality,open-mindedness,broad-mindedness,tolerance
+bitch:compliment,praise
+biting:pleasant,kind,mild,nice,bland
+bitter:pleasant,content,genial,kind,wonderful
+bitterly:softly,moderately,gently,unenthusiastically,easily
+bitterness:contentment,geniality,happiness,sweetness
+bizarre:standard,usual,sensible,commonplace,customary
+blab:conceal,hide,shut up,be quiet
+blabber:sense
+blackmail:give,save
+blah:interesting,exciting,spirited,full of life
+blame:commendation,compliment,flattery,praise,exculpation
+blameworthy:blameless,inculpable,innocent
+bland:exciting,interesting,lively,delicious,distinctive
+blandish:dissuade,discourage,repel,turn off,repulse
+blasphemous:godly,pious,respectful,reverent,religious
+blasphemy:godliness,piety,religion,religiousness,reverence
+blatant:concealed,hidden,moral,inconspicuous,secret
+blatantly:incompletely,secretly,shamefully
+blather:sense
+bleak:cheerful,friendly,appealing,pleasant,comforting
+bleakness:happiness,advantage,contentment,joy,encouragement
+bleed:increase,give,offer,add,put in
+bleeding:increase,give,offer,add,put in
+bleeds:increase,give,offer,add,put in
+blemish:blank,clarity,cleanliness,perfection,advantage
+blind:seeing,sighted,aware,understanding,uncovered
+blinding:concealed,hidden,dark,dull,plain
+blindside:flattery,praise,compliment,good fortune,luck
+blistering:freezing,cold,cool
+bloated:deflated,shrunken
+blockage:advantage,aid,assistance,clearance,opening
+blockhead:genius,brain
+bloodshed:peace
+bloody:pleasing,closed,shut
+blow:calm,good fortune,luck
+blunder:perfection,success,accuracy,fix,restitution
+blundering:do well,succeed,correct,fix,restore
+blunders:perfection,success,accuracy,fix,restitution
+blunt:polite,tactful,needled,pointed,sharp
+blur:clean,cleanse,purify,brighten,lighten
+blurred:clean,cleanse,purify,brighten,lighten
+blurring:clean,cleanse,purify,brighten,lighten
+blurry:clear
+blurs:clean,cleanse,purify,brighten,lighten
+blurt:conceal,hide,secrete,be quiet,keep quiet
+boastful:humble,modest,deprecating,unconceited
+boggle:expect
+bogus:factual,real,valid,honest,truthful
+boil:freeze,be happy
+boiling:freezing,cold,cool,happy
+boisterous:subdued,restrained,solemn,quiet,calm
+bomb:create,aid,protect,build,do well
+bombard:leave alone
+bombardment:defense
+bombastic:restrained,humble,quiet,reserved
+bondage:independence,freedom
+bonkers:sane
+bore:charmer,pleasure,exciter
+bored:enthusiastic,excited,exhilarated,interested,energized
+boredom:excitement,vigor,energy,liveliness,concern
+bores:charmer,pleasure,exciter
+boring:exciting,interesting,lively,eventful,intelligent
+botch:create,grow,accomplish,achieve,succeed
+bother:happiness,health,advantage,delight,calmness
+bothered:collected,satisfied,untroubled,calm,unworried
+bothers:happiness,health,advantage,delight,calmness
+bothersome:helpful,convenient,untroubling
+boycott:sanction,welcome,include,permit,use
+brainless:intelligent,smart
+brainwash:remain,keep,stop
+brash:cautious,timid,careful,discreet,shy
+brashness:modesty,shyness,humility,manners,meekness
+brat:angel
+bravado:cowardice,fear,fearfulness,modesty,restraint
+brazen:retiring,meek,timid,shamed,shamefaced
+brazenly:incompletely,secretly,shamefully
+brazenness:fear,modesty,shyness,humility,manners
+breach:closing,misfortune,juncture,bridge,closure
+break:closing,juncture,binding,fastening,continuation
+break-up:friendliness,juncture,marriage,introduction,connection
+break-ups:friendliness,juncture,marriage,introduction,connection
+breakdown:mental health
+breaking:enduring,strong
+breaks:closing,juncture,binding,fastening,continuation
+breakup:marriage,introduction,reconciliation,beginning,start
+breakups:marriage,introduction,reconciliation,beginning,start
+bribery:decency,honesty,truthfulness,goodness,cleanliness
+bristle:be happy
+brittle:unbreakable,durable,resilient,supple,flexible
+broke:wealthy,solvent,rich,affluent
+broken:connected,OK,continuous,satisfied,working
+brood:parent,child
+browbeat:assist,aid,coax,compliment,praise
+bruise:aid,heal,compliment,praise,adorn
+bruised:aid,heal,compliment,praise,adorn
+bruises:aid,heal,compliment,praise,adorn
+bruising:aid,heal,compliment,praise,adorn
+brusque:polite,courteous,kind,tactful
+brutal:civilized,kind,polite,courteous,compassionate
+brutalities:kindness,gentleness,humaneness,niceness
+brutality:kindness,gentleness,humaneness,niceness
+brutalize:straighten,upgrade,clean,improve,purify
+brutalizing:straighten,upgrade,clean,improve,purify
+brutally:kindly,gently,humanely,nicely
+brute:gentle,mild,weak
+brutish:gentle,mild
+bs:wisdom,logic,judgment,seriousness,intelligence
+buckle:straighten,flatten,smooth
+bug:apathy,indifference,lethargy
+bugging:aid,soothe,assist,delight,make happy
+buggy:sane
+bugs:apathy,indifference,lethargy
+bulkier:insubstantial,miniature,tiny,airy,light
+bulkiness:safety,artfulness,dexterity,elegance,skill
+bulky:insubstantial,miniature,tiny,airy,light
+bullies:alleviate,aid,delight,help,please
+bullshit:truth
+bully:alleviate,aid,delight,help,please
+bump:praise,placate,soothe
+bumped:praise,placate,soothe
+bumping:praise,placate,soothe
+bumps:praise,placate,soothe
+bumpy:level,even,smooth,calm
+bungle:grow,succeed,help,do well,fix
+bungler:genius,success,brain
+bungling:expert
+bunk:sense,truth
+burden:aid,advantage,assistance,tranquility,calmness
+burdensome:trivial,helpful,easy,calm,aiding
+burdensomely:softly,moderately,gently,unenthusiastically,easily
+burn:smother,wet,stifle,subdue,aid
+burning:apathetic,unimportant,cold,cool,dull
+burns:smother,wet,stifle,subdue,aid
+bust:back,exoneration
+busts:back,exoneration
+butcher:create,build,repair
+buzzing:conceal,hide
+calamities:advantage,favor,success,boon,happiness
+calamitous:fortunate,lucky,harmless,helpful,advantageous
+calamity:advantage,favor,success,boon,happiness
+callous:mindful,responsive,kind,merciful,compassionate
+calumniate:compliment,honor,laud,praise,flatter
+calumniation:compliment,praise,kindness
+cancer:health,benignity,wholesomeness
+cannibal:humanitarian
+capitulate:defend,fight,win,conquer
+capricious:sensible,predictable,unchanging,reliable,stable
+capriciousness:sameness,normalcy,usualness,regularity,commonality
+careless:careful,mindful,cautious,painstaking,prudent
+carelessness:caution,care consideration
+caricature:praise,flattery,solemnity,seriousness
+carnage:peace
+carp:compliment,praise,laud,sanction,ignore
+castigate:forgive,reward,compliment,laud,praise
+casualty:good luck,happiness,miracle,success,good fortune
+cataclysm:good luck,happiness,miracle,boon,success
+cataclysmic:fortunate,successful,advantageous,blessed,happy
+catastrophe:good luck,miracle,prosperity,success,win
+catastrophes:good luck,miracle,prosperity,success,win
+catastrophic:fortunate,successful,advantageous,blessed,happy
+caustic:kind,soothing,bland,mild,nice
+censure:praise,compliment,encouragement,endorsement,ratification
+chafe:calm,soothe,placate,heal,mend
+chaff:assets,possessions,property,sense
+chagrin:happiness,satisfaction,delight,gladness,joy
+challenging:deny,dodge,ignore,calm,answer
+chaos:calm,orderliness,tidiness,quiet,harmony
+chaotic:ordered,organized,systematic,calm,harmonized
+chasten:compliment,praise,release,aid,laud
+chastise:praise,compliment,laud,aid,assist
+chastisement:compliment,praise,award,reward,forgiveness
+chatter:quiet,drawl
+cheap:expensive,excellent,valuable,worthy,unreasonable
+cheapen:honor,laud,praise,upgrade,enhance
+cheat:honesty,truthfulness,reality,frankness,peace
+cheating:frankness,honesty,truthfulness,openness
+cheats:honesty,truthfulness,reality,frankness,peace
+cheerless:cheerful,bright,happy,uplifting
+chide:compliment,praise,laud,applaud,exonerate
+childish:experienced,wise,adult,mature,sensible
+chill:friendly,responsive,kind,heated,hot
+chilly:friendly,tropical,responsive,welcoming,temperate
+choke:aid,assist,release,liberate,permit
+choppy:level,even,smooth,calm
+chore:happiness,peace
+chronic:temporary,halting,intermittent,interrupted,infrequent
+chunky:skinny,underweight,thin,slim
+clamor:silence,calm,quiet,order,peace
+clash:calm,truce,compatibility,agreement,peace
+cliched:atypical,unique
+clique:individual
+clog:advantage,aid,assistance,opening,help
+clogged:aid,assist,loosen,release,unblock
+clogs:advantage,aid,assistance,opening,help
+cloud:cognizance,brightness,light,understanding
+clouding:cognizance,brightness,light,understanding
+cloudy:intelligent,encouraging,cheerful,vivacious,cloudless
+clueless:aware,cognizant,clear,certain,sure
+clumsy:adroit,agile,clever,dexterous,expert
+clunky:fun,helpful,graceful,small,airy
+coarse:polite,kind,pleasant,chaste,moral
+cocky:cautious,meek,unsure,timid,uncertain
+coerce:aid,assist,dissuade,repress,suppress
+cold:pleasant,friendly,kind,responsive,ignorant
+collapse:miracle,success,increase,wonder,creation
+collude:forget,neglect
+collusion:honesty
+combative:kind,peaceful,nice,agreeable,compromising
+comical:sensible,dramatic,tragic,logical,wise
+commiserate:turn away,be indifferent
+commonplace:abnormal,unusual,unconventional,extraordinary,infrequent
+commotion:happiness,calm,calmness,obedience,quiet
+commotions:happiness,calm,calmness,obedience,quiet
+complacent:unsure,discontented,dissatisfied,unhappy,concerned
+complain:compliment,laud,praise,concur,consent
+complained:compliment,laud,praise,concur,consent
+complaining:appreciating,enjoying,praising
+complains:compliment,laud,praise,concur,consent
+complaint:compliment,praise,flattery,exculpation,happiness
+complaints:compliment,praise,flattery,exculpation,happiness
+complex:evident,homogeneous,obvious,discernible,simple
+complicated:facile,uncomplicated,easy,nice,simple
+complication:clarity,calm,advantage,simplicity,ease
