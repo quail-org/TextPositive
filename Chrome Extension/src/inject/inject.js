@@ -1,4 +1,6 @@
 
+var dict = {};
+
 chrome.extension.sendMessage({}, function(response) {
     var readyStateCheckInterval = setInterval(function() {
         if (document.readyState === "complete") {
@@ -9,8 +11,15 @@ chrome.extension.sendMessage({}, function(response) {
             console.log("INJECTED FOR HACKMIT");
             // ----------------------------------------------------------
 			inject();
-			read('dict.txt', alert);
 
+			read('dict.txt', a => {
+				a.split('\n').forEach( (x, i) => {
+					var p = x.split(',');
+					dict[p[0]] = p[1];
+				});
+			});
+
+	
             var enabled = true;
 
             chrome.storage.sync.set({
@@ -148,6 +157,7 @@ function tokenize(text) {
 }
 
 function scanTokens() {
+	/*
 	let cs = NODES.mask.childNodes;
 
 	cs.forEach( (x, i) => {
@@ -156,6 +166,7 @@ function scanTokens() {
 		else
 			x.className = ''; // unnecessary?
 	});
+	*/
 }
 
 
@@ -169,12 +180,20 @@ function bind() {
 			var ry = r.top + window.scrollY;
 			var ry2 = r.bottom + window.scrollY;
 
-			if(e.pageX >= r.left && e.pageX <= r.right
+			let s;
+			try {
+				s = CLASS[elem.getAttribute('id')].data[0][0];
+			} catch(e) {
+				s = 0;
+			}
+			if(s > 0.3 && e.pageX >= r.left && e.pageX <= r.right
 				&& e.pageY >= ry && e.pageY <= ry2) {
 				console.log('what');
 				STATUS.style.visibility = "visible";
 				STATUS.style.top = (ry2 + 3) + 'px';
 				STATUS.style.left = r.left + 'px';
+				console.log(document.getElementById('redbar').style.width);
+				document.getElementById('redbar').style.width = Math.round(score * 120) + 'px';
 				found = true;
 			}
 		});
@@ -182,8 +201,79 @@ function bind() {
 		if(!found)
 			STATUS.style.visibility = 'hidden';
 	}
+
 }
 
+var CLASS = {};
+
+function updateClass() {
+	scan();
+
+	Object.keys(CLASS).forEach(id => {
+		let res = CLASS[id];
+		if(res.code < 0) {
+			return;
+		}
+		let elem = document.getElementById(id);
+		if(res.data[0][0] > 0.3 && elem.className != 'negative') {
+			elem.className = 'negative';
+		}
+	});
+}
+
+setInterval(updateClass, 100);
+
+function scan() {
+	let arr = Array.from(document.getElementsByTagName('txtpos'));
+
+	let stack = [];
+
+	arr.forEach( (x, i) => {
+		stack.push(x);	
+		if(x.innerText.indexOf('.') >= 0 || x.innerText.indexOf(',') >= 0) {
+			parse(stack.slice(0, stack.length));		
+			stack = [];	
+		}
+	});
+
+	if(stack.length > 0)
+		parse(stack.slice(0, stack.length))
+
+	function parse(s) {
+		let words = s.map(x => x.innerText);		
+		words = words.map(strip).join(' ');
+					
+		let tok = tokenizer(words);
+
+		let ids = s.map(x => x.getAttribute('id'));
+		
+		analyze(tok, function(res) {
+			ids.forEach( (x, i) => {
+				CLASS[x] = JSON.parse(res);
+			});
+		});
+	}
+
+	function strip(str) {
+		return str.replace(/[^A-Za-z0-9]+/g, '');
+	}
+}
+
+function tokenizer(text) {
+	let nf = 34186;
+	var tok = text.toLowerCase().split(/\s+/g);
+
+	let res = [];
+
+	tok.forEach(x => {
+		if(dict.hasOwnProperty(x))
+			res.push(+dict[x])
+		else
+			res.push(nf);
+	});
+
+	return res;
+}
 
 function read(file, cb) {
 	var xhr = new XMLHttpRequest();
@@ -200,7 +290,7 @@ function read(file, cb) {
 
 function analyze(tokens, cb) {
 	var xhr = new XMLHttpRequest();
-	xhr.open('POST', 'http://34.230.32.181:8002');
+	xhr.open('POST', 'https://ml.textpositive.org');
 	xhr.setRequestHeader('Content-type', 'application/json');
 	xhr.onreadystatechange = function() {
 		if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
@@ -208,5 +298,5 @@ function analyze(tokens, cb) {
 		}
 	}
 
-	xhr.send(JSON.stringify({word: [ 9, 96, 93, 4, 29, 31, 6, 80, 36, 460, 12, 6076, 11, 27 ]}));
+	xhr.send(JSON.stringify({word: tokens}));
 }

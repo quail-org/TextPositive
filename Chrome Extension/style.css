@@ -1,4 +1,5 @@
 txtpos {
+	z-index: 10000;
 }
 
 txtpos.positive {
