@@ -70,7 +70,6 @@ chrome.extension.sendMessage({}, function(response) {
     }, 10);
 });
 
-
 setInterval(function() {
 	updateMask();
 	let act = document.activeElement;
@@ -80,7 +79,7 @@ setInterval(function() {
 			getMask(act);
 		}
 	}
-}, 500);
+}, 100);
 
 var STATUS;
 
@@ -227,7 +226,6 @@ function bind() {
 			}
 			if(s > 0.3 && e.pageX >= r.left && e.pageX <= r.right
 				&& e.pageY >= ry && e.pageY <= ry2) {
-				console.log('what');
 				STATUS.style.visibility = "visible";
 				STATUS.style.top = (ry2 + 0) + 'px';
 				STATUS.style.left = r.left + 'px';
@@ -238,7 +236,6 @@ function bind() {
 					sugg.innerHTML = '<i>remove it</i> >>';
 				}
 				CUR_STAT = elem;
-				console.log(document.getElementById('redbar').style.width);
 				document.getElementById('redbar').style.width = Math.round(s * 120) + 'px';
 				found = true;
 			}
@@ -255,7 +252,9 @@ function bind() {
 var CLASS = {};
 
 function updateClasses() {
-	scan();
+	document.body.onkeyup = function(e) {
+		scan();
+	}
 
 	Object.keys(CLASS).forEach(id => {
 		let res = CLASS[id];
@@ -290,17 +289,14 @@ function scan() {
 		let words = s.map(x => x.innerText);		
 		words = words.map(strip).join(' ').trim();
 					
-		console.log(words);
-
 		let tok = tokenizer(words);
-
-		console.log(tok);
 
 		let ids = s.map(x => x.getAttribute('id'));
 		
 		analyze(tok, function(res) {
 			ids.forEach( (x, i) => {
 				CLASS[x] = JSON.parse(res);
+				console.log('DONE');
 			});
 		});
 	}
