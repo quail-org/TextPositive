@@ -224,7 +224,7 @@ function bind() {
 			} catch(e) {
 				s = 0;
 			}
-			if(s > 0.3 && e.pageX >= r.left && e.pageX <= r.right
+			if(s > 0.45 && e.pageX >= r.left && e.pageX <= r.right
 				&& e.pageY >= ry && e.pageY <= ry2) {
 				STATUS.style.visibility = "visible";
 				STATUS.style.top = (ry2 + 0) + 'px';
@@ -263,7 +263,7 @@ function updateClasses() {
 		}
 		let elem = document.getElementById(id);
 
-		if(elem && res.data[0][0] > 0.3 && elem.className != 'negative') {
+		if(elem && res.data[0][0] > 0.45 && elem.className != 'negative') {
 			elem.className = 'negative';
 		}
 	});
@@ -296,7 +296,6 @@ function scan() {
 		analyze(tok, function(res) {
 			ids.forEach( (x, i) => {
 				CLASS[x] = JSON.parse(res);
-				console.log('DONE');
 			});
 		});
 	}
