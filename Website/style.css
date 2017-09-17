@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#section-top {
+	width: 100%;
+	height: 900px;
+	background: green;
+}
+
+#logo-area {
+	width: 100%;
+	height: 100px;
+	background: blue;
+}
