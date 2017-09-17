@@ -1,77 +1,101 @@
 <!doctype html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="fonts.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="fonts.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
 
-<body>
+    <body>
 
-<div id="network">
-	<div id="logo-area">
-			<div style="width: 100%; height: 65px; line-height: 65px;">
-				<img src="Logo/textpositive_web.png" style="height: 65px; float: left; padding-right: 10px;">
+        <div id="network">
+            <div id="logo-area">
+                <div style="width: 100%; height: 65px; line-height: 65px;">
+                    <img src="Logo/textpositive_web.png" style="height: 65px; float: left; padding-right: 10px;">
 
-				<div style="float: right; width: 250px; height: 45px; border-radius: 5px; background: rgb(149, 218, 229); margin-top: 15px; color: white; text-align: center; line-height: 45px;">
-					Add to Chrome	
-				</div>
-			</div>
-	</div>
+                    <div style="float: right; width: 250px; height: 45px; border-radius: 5px; background: rgb(149, 218, 229); margin-top: 15px; color: white; text-align: center; line-height: 45px;">
+                        Add to Chrome	
+                    </div>
+                </div>
+            </div>
 
-	<div id="motto">
-		<canvas id="can"></canvas>
-	</div>
+            <div id="motto">
+                <canvas id="can"></canvas>
+                <h1 style="height:90%;width:100%;display:flex;align-items:center;justify-content:center;color:white" id="title"></h1>
+            </div>
 
-</div>
+        </div>
 
-<div id="main" style="margin-top: 100px;">
-	<div class="box" style="float: left; width: 50%; height: 100%;">
-		<h1> Help Us Improve Our Product!</h1>
-		<br>
-		<p> A negative phrase is in the red x text field. </p>
-        <br>
-		<p> Please make the phrase nicer and enter the new field in the green text box! </p>
-        <br>
-        <p> When you're done, just press submit. </p>
+        <div id="main" style="margin-top: 100px;">
+            <div class="box" style="float: left; width: 50%; height: 100%;">
+                <h1> Help Us Improve Our Product!</h1>
+                <br>
+                <p> A negative phrase is in the <span style="color:red">red</span> x text field. </p>
+                <br>
+                <p> Please make the phrase nicer and enter the new field in the <span style="color:green">green</span> text box! </p>
+                <br>
+                <p> When you're done, just press submit. </p>
 
-	</div>
-	<div class="box" style="float: right; width: 50%; height: 100%;">
+            </div>
+            <div class="box" style="float: right; width: 50%; height: 100%;">
 
-		<!-- BEGIN firebase thing -->
-		<div style="position: relative;">
-		    <div style="z-index: 1000;color: green; font-size: 60px; position: absolute; right: -15px; top: -25px;">
-				&#10003;
-			</div>
-		<textarea id="pos" no-tp></textarea>		
-		</div>
+                <!-- BEGIN firebase thing -->
+                <div style="position: relative;">
+                    <div style="z-index: 1000;color: green; font-size: 60px; position: absolute; right: -15px; top: -25px;">
+                        &#10003;
+                    </div>
+                    <textarea id="pos" no-tp></textarea>		
+                </div>
 
-		<br>
-		<div style="position: relative;">
-		    <div style="z-index: 1000;color: red; font-size: 60px; position: absolute; right: -15px; top: -25px;">
-				&#10008;
-			</div>
-		<textarea id="neg" no-tp></textarea>		
-		</div>
+                <br>
+                <div style="position: relative;">
+                    <div style="z-index: 1000;color: red; font-size: 60px; position: absolute; right: -15px; top: -25px;">
+                        &#10008;
+                    </div>
+                    <textarea id="neg" readonly no-tp></textarea>		
+                </div>
 
-		<input type="submit" id="submit" />
-		<!-- END -->
+                <input type="submit" id="submit" />
+                <!-- END -->
 
-	</div>
-</div>
+            </div>
+        </div>
 
-<div id="label-box">
-    <form action=""></form> 
-</div>
-
-
-</body>
+        <div id="label-box">
+            <form action=""></form> 
+        </div>
 
 
-<script src="canvas.js"></script>
+    </body>
 
-<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
-<script src="firebase.js"></script>
+    <script>
+let titles = ["The Internet Can Be Incredibly Toxic. . .", "Text Positive Seeks To Help Make It A Better Place"];
+let title = document.getElementById("title");
+
+function cycleTitles(){
+    console.log('cycling titles');
+    if (title.innerHTML){
+        for (var i = 0; i < titles.length; i++){
+            console.log(i);
+            if (title.innerHTML === titles[i]){
+                console.log('equal');
+                i += 1
+                title.innerHTML = titles[ i % titles.length];
+                break;
+            }
+        }
+    } else {
+        title.innerHTML = titles[0];
+    }
+}
+
+setInterval(cycleTitles, 6000);
+    </script>
+
+    <script src="canvas.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
+    <script src="firebase.js"></script>
 
 </html>
