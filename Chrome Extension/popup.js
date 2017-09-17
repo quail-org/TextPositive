@@ -1,17 +1,19 @@
 var popup = document.getElementById("popup");
-var title = document.getElementById("title");
-title.innerHTML = "Reading Settings...";
+var stat = document.getElementById("status");
+var check = document.getElementById("check");
 
 var enabled = false;
 
 function updateCSS(){
     if (enabled){
-        title.innerHTML = "Text Positive is on";
-        popup.style.backgroundColor = 'green';
+        stat.innerHTML = "Text Positive is on";
+        check.checked = true;
+        popup.className = "on";
         //TODO: set switch style
     }else{
-        title.innerHTML = "Text Positive is off";
-        popup.style.backgroundColor = 'red';
+        stat.innerHTML = "Text Positive is off";
+        check.checked = false;
+        popup.className = "off";
     }
 }
 
@@ -28,10 +30,11 @@ toggle.onclick = function(){
     //TODO:on condition ? "enable" : "disable";
     console.log('toggle click');
 	enabled = !enabled;
+    updateCSS();
 	chrome.storage.sync.set({
 		enabled: enabled 
 	}, function(){
 		console.log('popup update');
 	});
-	//return false;
+	return false;
 };

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+
+#popup {
+  border-radius: 5px;
+  background-color: rgba(252,252,253,0.85);
+  padding: 20px;
+  box-shadow: 1px 1px 10px #888888;
+}
+
+.on{
+    border-style: solid;
+    border-color: #95DAE5;
+}
+
+.off{
+    border-style: solid;
+    border-color: #ff0000;
+}
+
+.displayText{
+    font-family: Bungee;
+}
