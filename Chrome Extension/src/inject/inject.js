@@ -133,6 +133,7 @@ function updateMask() {
 		return;
 
 	NODES.mask.innerHTML = tokenize(NODES.cloning.value);
+	updateClasses();
 	scanTokens();
 }
 
@@ -182,11 +183,11 @@ function bind() {
 
 			let s;
 			try {
-				s = CLASS[elem.getAttribute('id')].data[0][0];
+				s = CLASS[elem.getAttribute('id')].data[0][1];
 			} catch(e) {
 				s = 0;
 			}
-			if(s > 0.3 && e.pageX >= r.left && e.pageX <= r.right
+			if(s > 0.4 && e.pageX >= r.left && e.pageX <= r.right
 				&& e.pageY >= ry && e.pageY <= ry2) {
 				console.log('what');
 				STATUS.style.visibility = "visible";
@@ -206,7 +207,7 @@ function bind() {
 
 var CLASS = {};
 
-function updateClass() {
+function updateClasses() {
 	scan();
 
 	Object.keys(CLASS).forEach(id => {
@@ -215,13 +216,12 @@ function updateClass() {
 			return;
 		}
 		let elem = document.getElementById(id);
-		if(res.data[0][0] > 0.3 && elem.className != 'negative') {
+
+		if(elem && res.data[0][1] > 0.4 && elem.className != 'negative') {
 			elem.className = 'negative';
 		}
 	});
 }
-
-setInterval(updateClass, 100);
 
 function scan() {
 	let arr = Array.from(document.getElementsByTagName('txtpos'));
