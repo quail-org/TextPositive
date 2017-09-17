@@ -11,8 +11,14 @@ with open(sys.argv[1]) as inf, open(sys.argv[2], "w+") as outf:
     res = {}
     for line in inf:
         line = line.lower().strip()
-        res[line] = dictionary.antonym(line)
+        ant = dictionary.antonym(line);
+        try:
+            if ant is not None:
+		        outf.write(line + ':' + ','.join(ant) + '\n');
+        except:
+            print "error"
+            
 
-    outf.write(json.dumps(res))
+
     
 
