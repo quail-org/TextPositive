@@ -12,8 +12,9 @@
             <div id="logo-area">
                 <div style="width: 100%; height: 65px; line-height: 65px;">
                     <img src="Logo/textpositive_web.png" style="height: 65px; float: left; padding-right: 10px;">
-
+                    <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" style="height:65px;width:65px;float:right;line-height:45px" id="gitpic">
                     <div style="float: right; width: 250px; height: 45px; border-radius: 5px; background: rgb(149, 218, 229); margin-top: 15px; color: white; text-align: center; line-height: 45px;">
+
                         Add to Chrome	
                     </div>
                 </div>
@@ -69,6 +70,9 @@
     </body>
 
     <script>
+document.getElementById("gitpic").onclick = function(){
+    window.location.href = 'https://github.com/quail-org/TextPositive';    
+};
 let titles = ["The Internet Can Be Incredibly Toxic. . .", "Text Positive Seeks To Help Make It A Better Place"];
 let title = document.getElementById("title");
 
