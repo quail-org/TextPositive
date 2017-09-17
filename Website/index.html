@@ -1,72 +1,139 @@
 <!doctype html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="fonts.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="fonts.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
 
-<body>
+    <body>
 
-<div id="network">
-	<div id="logo-area">
-			<div style="width: 100%; height: 65px; line-height: 65px;">
-				<img src="Logo/textpositive_web.png" style="height: 65px; float: left; padding-right: 10px;">
+        <div id="network">
+            <div id="logo-area">
+                <div style="width: 100%; height: 65px; line-height: 65px;">
+                    <img src="Logo/textpositive_web.png" style="height: 65px; float: left; padding-right: 10px;">
+                    <!--img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" style="height:60px;width:60px;float:right;line-height:45px" id="gitpic"--!>
+                        <div align="right">
+                        <h3 id="about" style ="display:inline-block;padding-right:20px;color:rgb(93, 168, 232);">about</h3>
+                        <h3 id="contact" style="display:inline-block;margin-top:5px;padding-right:20px;color:rgb(93, 168, 232);">contact</h3>
+                        <div style="float: right; width: 175px; height: 45px; border-radius: 5px; background: rgb(93, 168, 232); margin-top: 15px; color: white; text-align: center; line-height: 45px;">
 
-				<div style="float: right; width: 250px; height: 45px; border-radius: 5px; background: rgb(149, 218, 229); margin-top: 15px; color: white; text-align: center; line-height: 45px;">
-					Add to Chrome	
-				</div>
-			</div>
-	</div>
+                        Add to Chrome	
+                        </div>
+                        </div>
+                        </div>
+                        </div>
 
-	<div id="motto">
-		<canvas id="can"></canvas>
-	</div>
+                        <div id="motto">
+                        <canvas id="can"></canvas>
+                        <div style="width:90%;height:auto;margin:0 auto;margin-top:150px;color:white;"> 
+                        <h1 style="color:white" id="title">The Internet Can Be Incredibly Toxic. . .</h1>
+                        <br>
+                        <h1 style="margin-left:100px;">Text<i>Positive</i> Seeks To Make It <i id="cycle">A Better Place</i></h1>
 
-</div>
+                        </div>
+                        </div>
 
-<div id="main" style="margin-top: 100px;">
-	<div class="box" style="float: left; width: 50%; height: 100%;">
-		<h1> Testing </h1>
-		<br>
-		<p> What do I do here? </p>
-	</div>
-	<div class="box" style="float: right; width: 50%; height: 100%;">
+                        </div>
 
-		<!-- BEGIN firebase thing -->
-		<div style="position: relative;">
-		    <div style="z-index: 1000;color: green; font-size: 60px; position: absolute; right: -15px; top: -25px;">
-				&#10003;
-			</div>
-		<textarea id="pos" no-tp></textarea>		
-		</div>
+                        <div id="main" style="margin-top: 90px;">
+                        <div class="box" style="float: left; width: 50%; height: 100%;">
+                        <h1> Help Us Improve Our Product!</h1>
+                        <br>
+                        <p> A negative phrase is in the <span style="color:red">red</span> x text field. </p>
+                        <br>
+                        <p> Please make the phrase nicer and enter the new field in the <span style="color:green">green</span> text box! </p>
+                        <br>
+                        <p> When you're done, just press submit. </p>
 
-		<br>
-		<div style="position: relative;">
-		    <div style="z-index: 1000;color: red; font-size: 60px; position: absolute; right: -15px; top: -25px;">
-				&#10008;
-			</div>
-		<textarea id="neg" no-tp></textarea>		
-		</div>
+                        </div>
+                        <div class="box" style="float: right; width: 50%; height: 100%;">
 
-		<input type="submit" />
-		<!-- END -->
+                        <!-- BEGIN firebase thing -->
+                        <div style="position: relative;">
+                            <div style="z-index: 1000;color: green; font-size: 60px; position: absolute; right: -15px; top: -25px;">
+                                &#10003;
+                            </div>
+                            <textarea id="pos" no-tp></textarea>		
+                        </div>
 
-	</div>
-</div>
+                        <br>
+                        <div style="position: relative;">
+                            <div style="z-index: 1000;color: red; font-size: 60px; position: absolute; right: -15px; top: -25px;">
+                                &#10008;
+                            </div>
+                            <textarea id="neg" readonly no-tp></textarea>		
+                        </div>
 
-<div id="label-box">
-    <form action=""></form> 
-</div>
+                        <input type="submit" id="submit" />
+                        <!-- END -->
+
+                        </div>
+                        </div>
+
+                        <div id="label-box">
+                            <form action=""></form> 
+                        </div>
 
 
-</body>
+    </body>
 
+    <script>
+let about = document.getElementById("about");
+let contact= document.getElementById("contact");
 
-<script src="canvas.js"></script>
+function colorize(el){
+    el.onmouseover = function(){
+        console.log('mouse over');
+        el.style.color = '#95DAE5'; 
+    };
+    el.onmouseleave = function(){
+        el.style.color = '#5DA8E8'; 
+    };
 
-<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
-<script src="firebase.js"></script>
+}
+
+about.onclick = function(){
+    console.log('about clicked');
+}
+
+contact.onclick = function(){
+    console.log('contact clicked');
+}
+
+colorize(about);
+colorize(contact);
+document.getElementById("gitpic").onclick = function(){
+    window.location.href = 'https://github.com/quail-org/TextPositive';    
+};
+let titles = ["A Better Place", "More Positive", "More Inclusive", "More Friendly"];
+let cycle= document.getElementById("cycle");
+
+function cycleTitles(){
+    console.log('cycling titles');
+    if (cycle.innerHTML){
+        for (var i = 0; i < titles.length; i++){
+            console.log(i);
+            if (cycle.innerHTML === titles[i]){
+                console.log('equal');
+                i += 1
+                cycle.innerHTML = titles[ i % titles.length];
+                break;
+            }
+        }
+    } else {
+        cycle.innerHTML = titles[0];
+        setTimeout(300);
+    }
+}
+
+setInterval(cycleTitles, 6000);
+    </script>
+
+    <script src="canvas.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
+    <script src="firebase.js"></script>
 
 </html>
