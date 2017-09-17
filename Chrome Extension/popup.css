@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee');
+@font-face {
+  font-family: 'Bariol';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Bariol_Regular.otf');
+}
 
 #popup {
   border-radius: 5px;
