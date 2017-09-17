@@ -14,8 +14,8 @@
                     <img src="Logo/textpositive_web.png" style="height: 65px; float: left; padding-right: 10px;">
                     <!--img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" style="height:60px;width:60px;float:right;line-height:45px" id="gitpic"--!>
                         <div align="right">
-                        <h3 style ="display:inline-block;padding-right:20px;color:rgb(93, 168, 232);">about</h3>
-                        <h3 style="display:inline-block;margin-top:5px;padding-right:20px;color:rgb(93, 168, 232);">contact</h3>
+                        <h3 id="about" style ="display:inline-block;padding-right:20px;color:rgb(93, 168, 232);">about</h3>
+                        <h3 id="contact" style="display:inline-block;margin-top:5px;padding-right:20px;color:rgb(93, 168, 232);">contact</h3>
                         <div style="float: right; width: 175px; height: 45px; border-radius: 5px; background: rgb(93, 168, 232); margin-top: 15px; color: white; text-align: center; line-height: 45px;">
 
                         Add to Chrome	
@@ -79,6 +79,30 @@
     </body>
 
     <script>
+let about = document.getElementById("about");
+let contact= document.getElementById("contact");
+
+function colorize(el){
+    el.onmouseover = function(){
+        console.log('mouse over');
+        el.style.color = '#95DAE5'; 
+    };
+    el.onmouseleave = function(){
+        el.style.color = '#5DA8E8'; 
+    };
+
+}
+
+about.onclick = function(){
+    console.log('about clicked');
+}
+
+contact.onclick = function(){
+    console.log('contact clicked');
+}
+
+colorize(about);
+colorize(contact);
 document.getElementById("gitpic").onclick = function(){
     window.location.href = 'https://github.com/quail-org/TextPositive';    
 };
